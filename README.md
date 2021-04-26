@@ -1,1 +1,1 @@
-# latex-tutorial
+# latex-handbook
