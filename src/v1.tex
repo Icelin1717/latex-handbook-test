@@ -79,6 +79,13 @@
 \renewcommand{\headrulewidth}{2pt}
 \renewcommand{\footrulewidth}{2pt}
 
+\usepackage{zhnumber}
+
+\usepackage{chngcntr}
+\counterwithin{chapter}{part}
+\renewcommand{\thechapter}{\arabic{chapter}}
+
+
 
 \usepackage{titlesec}
 \titleformat{\chapter}[frame]{\normalfont\huge\bfseries}{第\ \thechapter\ 章}{20pt}{\Huge}
@@ -98,6 +105,11 @@
 	\textbf{例題~\theexample. #1} \rmfamily}{\medskip}
 
 
+
+
+%\usepackage{moreenum}
+
+
 \linespread{1.25}
 
 \title{
@@ -110,8 +122,7 @@
 \date{}
 
 
-\usepackage{chngcntr}
-%\counterwithin{chapter}{part}
+
 
 
 \begin{document}
@@ -122,7 +133,7 @@
 	\part{前言}
 		\chapter*{作者介紹}
 		
-		\chapter{推薦序}
+		\chapter*{推薦序}
 			
 			
 			
@@ -156,6 +167,8 @@
 
 			\section{\LaTeX vs. Microsoft Word}
 			下表為......陣營的\LaTeX 選手與......陣營的Microsoft Word選手大比拚：
+			
+			
 			\begin{center}
 			
 					\begin{tabular}{|c|c|}
